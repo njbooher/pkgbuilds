@@ -10,8 +10,8 @@ else
     _arch="x86"
 fi
 
-_major="8.0.1"
-_minor=78128
+_major="8.0.2"
+_minor=78971
 
 pkgname="komodoide"
 pkgver="${_major}_${_minor}"
@@ -29,8 +29,8 @@ options=(!strip)
 source=("Komodo-IDE-${_major}-${_minor}-linux-${_arch}.tar.gz")
 
 if [ $_arch = "x86_64" ] ; then
-    md5sums=('55e06b0a1402b8940d712fa5d50da13b')
-    sha256sums=('a90fce8aeb61912edba24c099ea151182ea7a578e29979034ef9805c9a3bc222')
+    md5sums=('faec1349b4518e91da419b054a7d9b2e')
+    sha256sums=('3c2735d3b827a6a676b31a9d80da079b5db9fdd3aa1990e17a0571a26226928b')
 else
     md5sums=('a4e14897dc7a878f302e7adb143dbcee')
     sha256sums=('3c03bed04302eed88fe1c2028043275e9db583a06cfb6b2566639efc2834a79b')
