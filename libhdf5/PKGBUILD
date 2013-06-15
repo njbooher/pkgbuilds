@@ -1,6 +1,8 @@
 # based on http://repos.archlinux.org/wsvn/packages/hdf5/trunk/PKGBUILD
 # Maintainer: (epsilom) Xavier Corredor <xavier.corredor.llano (a) gmail.com>
 
+# Modified from AUR version to produce libhdf5_cpp.a needed by blasr
+
 pkgname=libhdf5
 real_pkgname=hdf5
 pkgver=1.8.10.patch1
