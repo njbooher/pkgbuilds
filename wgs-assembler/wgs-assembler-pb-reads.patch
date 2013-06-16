@@ -1,0 +1,11 @@
+--- wgs-assembler-clean/src/AS_global.h	2013-06-16 18:23:04.615536895 -0400
++++ wgs-assembler-mod/src/AS_global.h	2013-06-16 18:21:33.841948693 -0400
+@@ -218,7 +218,7 @@
+ //  amounts of memory too.
+ //
+ #define AS_READ_MAX_PACKED_LEN_BITS       8
+-#define AS_READ_MAX_NORMAL_LEN_BITS       11
++#define AS_READ_MAX_NORMAL_LEN_BITS       15
+ 
+ //  Do not define this.
+ #undef OVS_DANGEROUSLY_OVERSIZE
