@@ -23,14 +23,16 @@ source=(
 "http://downloads.sourceforge.net/project/${pkgname}/${pkgname}/${pkgver}/${pkgname}-${pkgver}.tar.gz"
 "amos-3.1.0-gcc4.7.patch"
 "amos-3.1.0-parallel_make.patch"
+"amos-3.1.0-toAmos_new.patch"
 )
 
 build() {
   cd ${pkgname}-${pkgver}
   patch -p1 < ${srcdir}/amos-3.1.0-gcc4.7.patch
   patch -p1 < ${srcdir}/amos-3.1.0-parallel_make.patch
+  patch -p1 < ${srcdir}/amos-3.1.0-toAmos_new.patch
   PYTHON=/usr/bin/python2 PERL=/usr/bin/perl \
-	  	./configure --prefix=/usr --with-qmake-qt4=/usr/bin/qmake-qt4
+	  	./configure --prefix=/usr --with-qmake-qt4=/usr/bin/qmake-qt4 --with-CA-dir=/home/nick/workspace/pkgbuilds/wgs-assembler/src/Linux-amd64/
   make
 }
 
@@ -41,4 +43,5 @@ package() {
 }
 md5sums=('51ebe835c93eef9acd39101738b2048c'
          '1eafa4de5d5837b8761c8f49e40a20d4'
-         '82d8d32e85fa5762f41cb75749f1c24f')
+         '82d8d32e85fa5762f41cb75749f1c24f'
+         '5e33f2e6a8392a635ade22eacde8848b')
